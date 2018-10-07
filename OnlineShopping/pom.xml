@@ -11,6 +11,7 @@
 
 	<properties>
 		<javaee.version>8.0</javaee.version>
+		<springmvc.version>5.0.8.RELEASE</springmvc.version>
 	</properties>
 	<dependencies>
 
@@ -29,12 +30,30 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springmvc.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 	</dependencies>
+
+
 	<build>
+
 		<finalName>OnlineShopping</finalName>
 
 		<plugins>
-				<!-- Update to latest version of JAVA -->
+			<!-- Update to latest version of JAVA -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
