@@ -14,7 +14,14 @@
 		<springmvc.version>5.0.8.RELEASE</springmvc.version>
 	</properties>
 	<dependencies>
+		<!-- Linking Backend with the fornt End -->
 
+		<dependency>
+			<groupId>com.prad</groupId>
+			<artifactId>ShoppingBackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
