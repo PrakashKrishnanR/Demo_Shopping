@@ -23,8 +23,15 @@
 
 <title>Online Shopping - ${title}</title>
 
+
+<script>
+	window.menu = '${title}';
+</script>
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootswatch custom theme -->
+<link href="${css}/bootswatch.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -32,39 +39,46 @@
 </head>
 
 <body>
+	<div class="wrapper">
+		<!-- Navigation -->
+		<%@include file="./shared/navbar.jsp"%>
 
-	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
+		<!-- Page Content -->
 
-	<!-- Page Content -->
-	<!-- Loading Home page here -->
-	<c:if test="${userClickHome == true}">
+		<div class="content">
+			<!-- Loading Home page here -->
+			<c:if test="${userClickHome == true}">
 
-		<%@include file="home.jsp"%>
+				<%@include file="home.jsp"%>
 
-	</c:if>
+			</c:if>
 
-	<!-- Loading about us page -->
-	<c:if test="${userClickAbout == true}">
+			<!-- Loading about us page -->
+			<c:if test="${userClickAbout == true}">
 
-		<%@include file="about.jsp"%>
+				<%@include file="about.jsp"%>
 
-	</c:if>
-	<!-- Loading contact us page -->
-	<c:if test="${userClickContact == true}">
+			</c:if>
+			<!-- Loading contact us page -->
+			<c:if test="${userClickContact == true}">
 
-		<%@include file="contact.jsp"%>
+				<%@include file="contact.jsp"%>
 
-	</c:if>
-	<!-- /.container -->
+			</c:if>
+			<!-- /.container -->
+		</div>
 
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+		<!-- Footer -->
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="${js}/jquery.js"></script>
-	<script src="${js}/bootstrap.bundle.min.js"></script>
+		<%@include file="./shared/footer.jsp"%>
 
+		<!-- Bootstrap core JavaScript -->
+		<script src="${js}/jquery.js"></script>
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+		<!-- Self coded Java Script -->
+
+		<script src="${js}/myapp.js"></script>
+	</div>
 </body>
 
 </html>
