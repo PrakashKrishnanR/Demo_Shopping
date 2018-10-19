@@ -1,9 +1,9 @@
-<h1 class="my-4">Categories</h1>
+<h3 class="my-4">Categories</h3>
 <div class="list-group">
 
-	<c:forEach items="${category}" var="category">
+	<c:forEach items="${categories}" var="categories">
 	
-		<a href="#" class="list-group-item">${category.name}</a>
+		<a href="${contextRoot}/show/category/${categories.id}/products" class="list-group-item" id="a_${categories.name}">${categories.name}</a>
 		
 	</c:forEach>
 

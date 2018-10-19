@@ -3,8 +3,9 @@
 	<div class="row">	
 		
 		<h1>Contact Us</h1>
-		<hr/>
-		<p>This is an contact us page</p>	
+		<div class="col-lg-12">
+			<p>This is a Contact us page</p>
+		</div>	
 	
 	</div>
 
